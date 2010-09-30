@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'active_support'
 require 'levenshtein'
 require 'set'
 
