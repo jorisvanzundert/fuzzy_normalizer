@@ -1,1 +1,3 @@
 sinatra
+active_support
+levenshtein
