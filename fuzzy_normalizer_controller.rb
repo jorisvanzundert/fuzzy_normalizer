@@ -2,6 +2,7 @@ require 'rubygems'
 require 'sinatra'
 require 'active_support'
 require 'fuzzy_normalizer'
+require 'haml'
 
 #set :environment, :development
 #set :show_exceptions, false
@@ -9,8 +10,7 @@ require 'fuzzy_normalizer'
 class FuzzyNormalizerController
  
   get '/doc' do
-    "accepts: JSON formatted CollateX token sets adhering to http:\/\/gregor.middell.net\/collatex\/api\/collate\r\n
-    returns: fuzzy regularized JSON fromatted CollateX token sets" 
+    haml :doc
   end
   
   post '/regularize_fuzzy' do

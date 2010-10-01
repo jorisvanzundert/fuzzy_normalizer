@@ -23,4 +23,7 @@ class FuzzyNormalizerTest < Test::Unit::TestCase
     # compare token hash in translationtable out
   end
 
+  def test_leaves_extras
+    # {t:"oke", n:"aa", lk:"jdkjs"} doesn't touch lk, passes through 
+  end
 end
