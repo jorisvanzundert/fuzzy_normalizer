@@ -1,2 +1,2 @@
-require 'fuzzy_normalizer_controller'
+require 'vmtransformer_controller'
 run Sinatra::Application
